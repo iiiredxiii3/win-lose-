@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/index-style.css">
+    <link rel="icon" href="assets/hs.jpg">
+    <title>Win/Lose Counter</title>
+</head>
+<body>
+    <div class="counter-area" id="counter-area">
+        <div class="counter-wrapper">
+            <span>
+                <p class="wins-text">W:</p>
+                <div class="wins" id="wins">
+                    0
+                </div>
+            </span>
+            <span>
+                <p class="losses-text">L:</p>
+                <div class="losses" id="losses">
+                    0
+                </div>
+            </span>
+        </div>
+    </div>
+    <div class="controls-wrapper">
+        <p>Don't forget to crop out the excess space in OBS!</p>
+        <div class="button-wrapper">
+            <span>
+                <button class="add-win" onclick='handleButtonPress("win+")'>Win +</button>
+                <button class="add-win" onclick='handleButtonPress("win-")'>Win -</button>
+            </span>
+            <span>
+                <button class="add-lose" onclick='handleButtonPress("lose+")'>Lose +</button>
+                <button class="add-lose" onclick='handleButtonPress("lose-")'>Lose -</button>
+            </span>
+            <span class="clear-span">
+                <button class="clear" onclick='handleButtonPress("clear")'>Clear</button>
+            </span>
+        </div>
+    </div>
+    <script src="js/counterController.js"></script>
+</body>
+</html>

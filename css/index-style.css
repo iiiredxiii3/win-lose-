@@ -1,0 +1,155 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Public+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+    min-height: 100%;
+    width: max-content;
+    background: transparent !important;
+    background-color: transparent !important;
+    color: white;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+    background: transparent !important;
+}
+
+.counter-area {
+    padding: 20px;
+    width: max-content;
+    
+}
+
+.counter-wrapper {
+    position: relative;
+    display: flex;
+
+    width: max-content;
+    padding: 5px;
+
+    border-radius: 15px;
+    background-image: linear-gradient(30deg, rgb(11, 13, 18, 0.7), rgb(93, 107, 140, 0.7) 500%);
+    border: rgb(16, 20, 26, 0.65) solid 2px;
+    box-shadow: rgb(10, 12, 1, 0.65) 0px 0px 10px;
+}
+
+.img-wrapper {
+    display: flex;
+    align-items: center;
+
+    height: 100%;
+    margin-right: 10px;
+}
+
+.img-wrapper img {
+    position: relative;
+    height: 40px;
+    border-radius: 10px;
+}
+
+.counter-wrapper > span {
+    display: flex;
+    align-items: center;
+    font-family: "Nunito Sans", sans-serif;
+    font-weight: 500;
+    font-size: 18px;
+}
+
+.losses-text {
+    margin-left: 10px;
+}
+
+.wins-text {
+    margin-right: 10px;
+}
+
+.wins, .losses {
+    display: grid;
+
+    width: max-content;
+    padding: 2px 10px 2px 10px;
+    height: 25px;
+    border-radius: 10px;
+
+    text-align: center;
+    align-items: center;
+
+    font-family: "Nunito Sans", sans-serif;
+    font-weight: 1000;
+    font-size: 20px;
+    font-style: italic;
+    text-shadow: rgba(0, 12, 31, 0.696) 0px 0px 10px;
+}
+
+.wins {
+    background-color: rgb(0, 255, 85);
+    border: rgb(72, 255, 133) solid 2px;
+    box-shadow: rgb(72, 255, 133, 0.3) 0px 0px 10px;
+}
+
+.losses {
+    margin-left: 8px;
+    background-color: rgb(255, 60, 60);
+    border: rgb(255, 82, 82) solid 2px;
+    box-shadow: rgb(255, 82, 82, 0.3)  0px 0px 10px;
+}
+
+.controls-wrapper {
+    margin-top: 25px;
+    margin-left: 10px;
+
+    font-family: "Nunito Sans", sans-serif;
+    font-weight: 500;
+    font-size: 18px;
+}
+
+#obs-width {
+    font-weight: 800;
+}
+
+#obs-height {
+    font-weight: 800;
+}
+
+.button-wrapper {
+    display: grid;
+    grid-template-columns: 230px 230px;
+    column-gap: 20px;
+}
+
+.button-wrapper > span > button {
+    margin-top: 20px;
+    padding: 5px;
+    width: 100%;
+    color: white;
+    font-family: "Nunito Sans", sans-serif;
+    font-weight: 800;
+    font-size: 40px;
+    border-radius: 30px;
+}
+
+.add-win {
+    background-color: rgb(0, 222, 74);
+    border: rgb(63, 216, 114) solid 12px;
+    box-shadow: rgb(72, 255, 133, 0.3) 0px 0px 10px;
+}
+
+.add-lose {
+    background-color: rgb(224, 45, 45);
+    border: rgb(232, 73, 73) solid 12px;
+    box-shadow: rgb(255, 82, 82, 0.3)  0px 0px 10px;
+}
+
+.clear {
+    background-color: rgb(45, 143, 224);
+    border: rgb(73, 150, 232) solid 12px;
+    box-shadow: rgba(82, 200, 255, 0.3)  0px 0px 10px;
+}
+
+.clear-span {
+    grid-column: span 2;
+}
