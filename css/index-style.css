@@ -32,9 +32,9 @@ body {
     padding: 5px;
 
     border-radius: 15px;
-    background-image: linear-gradient(30deg, rgb(11, 13, 18, 0.7), rgb(93, 107, 140, 0.7) 500%);
-    border: rgb(16, 20, 26, 0.65) solid 2px;
-    box-shadow: rgb(10, 12, 1, 0.65) 0px 0px 10px;
+    background: transparent;
+    border: none;
+    box-shadow: none;
 }
 
 .img-wrapper {
